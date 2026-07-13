@@ -1,0 +1,110 @@
+*{ 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+nav {
+    background: #2C1F1F;
+    color: white;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 2em;
+
+}
+
+ul {
+    list-style: none;
+    font-family: Arial, sans-serif;
+
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #F4A261;
+}
+
+.logo {
+    font-size: 2em; 
+    font-weight: bold; 
+    color: chocolate;
+}
+
+.slideshow {
+    position: relative;
+    height: 25em;
+    overflow: hidden;
+    top: 3em;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
+  padding: 3em;
+  align-items: center;
+  justify-content: center;
+  transition: 3s;
+}
+
+.images img {
+  width: 8em;
+  height: 8em;
+  border: 0.5em #723907 solid;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+
+.images img:hover{
+  transform: scale(1.1);
+}
+
+.section { 
+    padding: 2em; 
+    text-align: center;
+    font-family: Arial, sans-serif; 
+}
+
+#search {
+    padding:1em; 
+    width: 20em; 
+}
+
+.block h3 {
+    margin-top: 0.5em;
+    font-family: Arial, sans-serif;
+    color: #2C1F1F;
+}
