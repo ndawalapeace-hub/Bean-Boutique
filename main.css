@@ -4,6 +4,11 @@
     box-sizing: border-box; 
 }
 
+body {
+    font-family: Arial, sans-serif; 
+    background: #f9f5f0; 
+}
+
 nav {
     background: #2C1F1F;
     color: white;
@@ -42,11 +47,28 @@ a:hover {
     color: chocolate;
 }
 
+.Wlcm{
+    text-align: center;
+    padding: 2em;
+    font-family: Arial, sans-serif;
+}
+
+.Wlcm h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #2C1F1F;
+}
+
+.Wlcm p {
+    font-size: 1.2em;
+    color: #4e4704;
+}
+
 .slideshow {
     position: relative;
     height: 25em;
-    overflow: hidden;
-    top: 3em;
+    top: 4em;
+    Margin-bottom: 2em;
 }
 
 .slide {
@@ -66,12 +88,14 @@ a:hover {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
 }
 
+/* Coffee for sale*/
+
 .images {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1em));
   gap: 4em;
   padding: 3em;
   align-items: center;
@@ -80,11 +104,12 @@ a:hover {
 }
 
 .images img {
-  width: 8em;
-  height: 8em;
+  width: 12em;
+  height: 12em;
   border: 0.5em #723907 solid;
   transition: 0.4s;
   cursor: pointer;
+
 }
 
 
@@ -107,4 +132,136 @@ a:hover {
     margin-top: 0.5em;
     font-family: Arial, sans-serif;
     color: #2C1F1F;
+    margin-bottom: 0.5em;
 }
+
+.block .cart-btn {
+    background-color: #572904;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.block .cart-btn:hover {
+    background-color: #E76F51;
+}
+
+.block p strong {
+    font-family: Arial, sans-serif;
+    color: #2C1F1F;
+}
+
+.block p {
+    font-family: Arial, sans-serif;
+    color: #4e4704;
+    margin-bottom: 0.5em;
+}
+
+/* Equipments */
+
+.equipments {
+  transition: 3s;
+  padding-left: 20em;
+}
+
+.equipments img {
+  width: 14em;
+  height: 14em;
+  border: 0.5em #723907 solid;
+  transition: 0.4s;
+  cursor: pointer;
+
+}
+
+.equipments img:hover{
+  transform: scale(1.1);
+}
+
+
+.card h3 {
+    margin-top: 0.5em;
+    font-family: Arial, sans-serif;
+    color: #2C1F1F;
+    margin-bottom: 0.5em;
+
+}
+
+.card .cart-btn {
+    background-color: #572904;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+    margin-bottom: 0.5em;
+}
+
+.card .cart-btn:hover {
+    background-color: #E76F51;
+}
+
+.card p strong {
+    font-family: Arial, sans-serif;
+    color: #2C1F1F;
+}
+
+.card p {
+    font-family: Arial, sans-serif;
+    color: #4e4704;
+    margin-bottom: 0.5em;
+}
+
+.card h3 {
+    font-family: Arial, sans-serif;
+    color: #2C1F1F;
+    margin-bottom: 0.5em;
+    text-decoration:wavy underline;
+}
+
+/* Footer*/
+
+footer {
+    background: #2C1F1F;
+    color: white;
+    padding: 2em;
+    margin-top: 10em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    
+}
+
+.column-2{
+    font-family: Arial, sans-serif;
+    color: #F4A261;
+    margin-bottom: 0.5em;
+
+}
+
+.column-3{
+    font-family: Arial, sans-serif;
+    color: #F4A261;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.column-1{
+    font-family: Arial, sans-serif;
+    color: #F4A261;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+    color: #e1dba4;
+    margin-bottom: 0.5em;
+}
+
+
+
