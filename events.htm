@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Bean Boutique</div>
+
+        <ul>
+            <li><a href="main.htm">Home</a></li>
+            <li><a href="coffee.htm">Coffee</a></li>
+            <li><a href="equipment.htm">Equipment</a></li>
+            <li><a href="events.htm">Workshop & Events</a></li>
+            <li><a href="cart.htm">Cart</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="Event-head"><h1>Upcoming Events</h1></div>
+
+    <div class="table">
+        <table>
+            <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+            </tr>
+
+            <tr>
+                <td>Latte Art Workshop</td>
+                <td>15-06-2026</td>
+                <td>10:00 AM - 12:00 PM</td>
+                <td>Bean Boutique, Area 49, New Shire</td>
+            </tr>
+
+            <tr>
+                <td>Home Brewing Techniques</td>
+                <td>19-08-2026</td>
+                <td>2:00 PM - 4:00 PM</td>
+                <td>Bean Boutique, Area 49, New Shire</td>
+            </tr>
+
+            <tr>
+                <td>Coffee Tasting Experience</td>
+                <td>28-10-2026</td>
+                <td>6:00 PM - 8:00 PM</td>
+                <td>Bean Boutique, Area 49, New Shire</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="form-container">
+
+        <div id="form-title"><strong>Register for Our Events</strong></div>
+
+            <form class="form" id="registerForm" action="mailto:Beanboutique@gmail.com" method="post">
+
+                <div class="row">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="row">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+
+                <div class="row">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+    </div>   
+
+</body>
+</html>
