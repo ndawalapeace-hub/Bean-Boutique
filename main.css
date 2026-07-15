@@ -9,6 +9,7 @@ body {
     background: #f9f5f0; 
 }
 
+
 nav {
     background: #2C1F1F;
     color: white;
@@ -41,11 +42,13 @@ a:hover {
     color: #F4A261;
 }
 
+
 .logo {
     font-size: 2em; 
     font-weight: bold; 
     color: chocolate;
 }
+
 
 .Wlcm{
     text-align: center;
@@ -128,7 +131,7 @@ a:hover {
     width: 20em; 
 }
 
-.block h3 {
+.block h2 {
     margin-top: 0.5em;
     font-family: Arial, sans-serif;
     color: #2C1F1F;
@@ -181,7 +184,7 @@ a:hover {
 }
 
 
-.card h3 {
+.card h2 {
     margin-top: 0.5em;
     font-family: Arial, sans-serif;
     color: #2C1F1F;
@@ -215,7 +218,7 @@ a:hover {
     margin-bottom: 0.5em;
 }
 
-.card h3 {
+.card h2 {
     font-family: Arial, sans-serif;
     color: #2C1F1F;
     margin-bottom: 0.5em;
@@ -263,5 +266,126 @@ footer p {
     margin-bottom: 0.5em;
 }
 
+/* Workshop & Events */
 
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#Event-head{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #2C1F1F;
+    font-size: larger;
+    margin-top: 1em;
+}
+
+.table th {
+    background-color: #2C1F1F;
+    color: white;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.table th, .table td {
+    border: 0.1em solid #957373;
+    padding: 0.5em;
+    text-align: left;
+}
+
+.form-container {
+    margin: auto;
+    width: 30em;
+    padding: 2em;
+    background-color: #efd5b6;
+    border-radius: 10px;
+    margin-top: 3em;
+}
+
+#form-title {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: Arial, sans-serif;
+    color: #2C1F1F;
+    font-size: larger;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    color: #2C1F1F;
+}
+
+.row{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+input{
+    padding: 0.5em;
+    border: 1 solid #ccc;
+    border-radius: 0.5em;
+    width: 100%;
+}
+
+.form-container button {
+    background-color: #572904;
+    color: white;
+    border: none;
+    padding: 1.2em;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    border-radius: 0.5em;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #E76F51;
+}
+
+/* Cart */
+
+.cart-container{
+    margin: auto;
+    width: 30em;
+    padding: 2em;
+    background-color: #efd5b6;
+    border-radius: 10px;
+    margin-top: 3em;
+}
+
+.cart-row button{
+    background-color: #572904;
+    color: white;
+    border: none;
+    padding: 0.4em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    border-radius: 0.5em;
+    transition: 0.3s;
+}
+
+.cart-row button:hover{
+    background-color: #E76F51;
+}
+
+#cart-total{
+    color: rgb(27, 17, 1);
+}
+
+.cart-container h1{
+    text-decoration:wavy underline;
+    font-size:x-large;
+    padding-bottom: 1em;
+}
