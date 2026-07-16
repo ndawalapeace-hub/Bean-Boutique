@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bean Boutique</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-        <div class="logo">Bean Boutique</div>
+        <div class="logo"><a href="index.htm">Bean Boutique</a></div>
         <ul>
-            <li><a href="main.htm">Home</a></li>
+            <li><a href="index.htm">Home</a></li>
             <li><a href="coffee.htm">Coffee</a></li>
             <li><a href="equipment.htm">Equipment</a></li>
             <li><a href="events.htm">Workshop & Events</a></li>
-            <li><a href="cart.htm">Cart <span id="cart-count">(0)</span></a></li>
+            <li><a href="subscription.htm">Subscriptions</a></li>
+            <li><a href="cart.htm">Cart:<span id="cart-count">(0)</span></a></li>
 
         </ul>
     </nav>
@@ -27,53 +28,57 @@
     </section> 
 
     <div class="equipments">
-        <div class="card" data-name="Coffee Grinder:" data-price="100000">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Five-dollar_coffee_grinder%2C_Nov_2025_02.jpg/960px-Five-dollar_coffee_grinder%2C_Nov_2025_02.jpg" alt="Coffee Grinder">
+        <div class="card" data-name="Coffee Grinder" data-price="100000" data-notes="A high-quality burr grinder for consistent coffee grounds." data-brewing="Grind your coffee beans just before brewing for the best flavor.">
+            <img src="equipment img/eq 1.jpg" alt="Coffee Grinder">
             <h2>Coffee Grinder</h2>
-            <p><strong>Description:</strong> A high-quality burr grinder for consistent coffee grounds.</p>
-            <p><strong>Usage Tip:</strong> Grind your coffee beans just before brewing for the best flavor.</p>
-            <p><strong>Price:</strong> K100000</p>
-            <button class="cart-btn">Add to Cart</button>
+            <p class="card-price">K100000</p>
         </div>
-        <div class="card" data-name="French Press:" data-price="75000">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Stainless_steel_french_press.png/960px-Stainless_steel_french_press.png" alt="French Press">
+        <div class="card" data-name="French Press" data-price="75000" data-notes="A classic French press for rich and flavorful coffee." data-brewing="Use a coarse grind and steep for 4 minutes for the best results.">
+            <img src="equipment img/eq 2.jpg" alt="French Press">
             <h2>French Press</h2>
-            <p><strong>Description:</strong> A classic French press for rich and flavorful coffee.</p>
-            <p><strong>Usage Tip:</strong> Use a coarse grind and steep for 4 minutes for the best results.</p>
-            <p><strong>Price:</strong> K75000</p>
-            <button class="cart-btn">Add to Cart</button>
+            <p class="card-price">K75000</p>
         </div>
-        <div class="card" data-name="AeroPress:" data-price="85000">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Sunday_fuel.jpg/960px-Sunday_fuel.jpg" alt="AeroPress">
+        <div class="card" data-name="AeroPress" data-price="85000" data-notes="A versatile coffee maker for smooth and clean coffee." data-brewing="Use a medium grind and brew for 1 minute for the best results.">
+            <img src="equipment img/eq 3.jpg" alt="AeroPress">
             <h2>AeroPress</h2>
-            <p><strong>Description:</strong> A versatile coffee maker for smooth and clean coffee.</p>
-            <p><strong>Usage Tip:</strong> Use a medium grind and brew for 1 minute for the best results.</p>
-            <p><strong>Price:</strong> K85000</p>
-            <button class="cart-btn">Add to Cart</button>
+            <p class="card-price">K85000</p>
         </div>
-        <div class="card" data-name="V60 Dripper:" data-price="15000">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Hario_V60_dripper_%2830519007832%29.jpg/960px-Hario_V60_dripper_%2830519007832%29.jpg" alt="V60 Dripper">
+        <div class="card" data-name="V60 Dripper" data-price="15000" data-notes="A pour-over coffee dripper for precise brewing control." data-brewing="Rinse the filter paper first, add ground coffee, and pour water in a circular motion.">
+            <img src="equipment img/eq 4.jpg" alt="V60 Dripper">
             <h2>V60 Dripper</h2>
-            <p><strong>Description:</strong> A pour-over coffee dripper for precise brewing control.</p>
-            <p><strong>Usage Tip:</strong> Rinse the filter paper first, add ground coffee, and pour water in a circular motion.</p>
-            <p><strong>Price:</strong> K15000</p>
-            <button class="cart-btn">Add to Cart</button>
+            <p class="card-price">K15000</p>
         </div>
-        <div class="card" data-name="Percolator:" data-price="110000">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Percolator%2C_USA_um_1950.JPG/960px-Percolator%2C_USA_um_1950.JPG" alt="Percolator">
+        <div class="card" data-name="Percolator" data-price="110000" data-notes="A traditional percolator for making strong and robust coffee." data-brewing="Use a medium grind and avoid over-percolating to prevent bitterness.">
+            <img src="equipment img/eq 5.jpg" alt="Percolator">
             <h2>Percolator</h2>
-            <p><strong>Description:</strong> A traditional percolator for making strong and robust coffee.</p>
-            <p><strong>Usage Tip:</strong> Use a medium grind and avoid over-percolating to prevent bitterness.</p>
-            <p><strong>Price:</strong> K110000</p>
-            <button class="cart-btn">Add to Cart</button>
+            <p class="card-price">K110000</p>
         </div>
-        <div class="card" data-name="Espresso Machine:" data-price="150000">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Krups_Vivo_F880_home_espresso_maker.jpg/960px-Krups_Vivo_F880_home_espresso_maker.jpg" alt="Espresso Machine">
+        <div class="card" data-name="Espresso Machine" data-price="150000" data-notes="A professional espresso machine for quality coffee." data-brewing="Preheat the machine and cup for 10 minutes before brewing.">
+            <img src="equipment img/eq 6.jpg" alt="Espresso Machine">
             <h2>Espresso Machine</h2>
-            <p><strong>Description:</strong> A professional espresso machine for quality coffee.</p>
-            <p><strong>Usage Tip:</strong> Preheat the machine and cup for 10 minutes before brewing.</p>
-            <p><strong>Price:</strong> K150000</p>
-            <button class="cart-btn">Add to Cart</button>
+            <p class="card-price">K150000</p>
+        </div>
+        <div class="card" data-name="Siphon" data-price="115000" data-notes="A vacuum brewer that uses vapor pressure to pull water up through coffee grounds." data-brewing="Use a medium grind and remove from heat as soon as it finishes.">
+            <img src="equipment img/eq 7.jpg" alt="Siphon">
+            <h2>Siphon</h2>
+            <p class="card-price">K115000</p>
+        </div>
+        <div class="card" data-name="Phin Filter" data-price="150000" data-notes="A small metal drip filter that sits directly on top of a cup, slowly dripping strong coffee." data-brewing="Press the filter disc gently, and let it drip for 4-5 minutes for a full-bodied brew.">
+            <img src="equipment img/eq 8.jpg" alt="Phin Filter">
+            <h2>Phin Filter</h2>
+            <p class="card-price">K150000</p>
+        </div>
+    </div>
+
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close">x</button>
+            <img id="modal-img" src="" alt="">
+            <h2 id="modal-name"></h2>
+            <p><strong>Tasting Notes:</strong> <span id="modal-notes"></span></p>
+            <p><strong>Brewing:</strong> <span id="modal-brewing"></span></p>
+            <p><strong>Price:</strong> <span id="modal-price"></span></p>
+            <button id="modal-add" class="cart-btn">Add to Cart</button>
         </div>
     </div>
 
@@ -91,14 +96,14 @@
 
         <div class="column-2">
             <h3>Follow Us</h3>
-            <p>Facebook: <a href="https://www.facebook.com/BeanBoutique">Bean Boutique</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/BeanBoutique">Bean Boutique</a></p>
-            <p>Twitter: <a href="https://x.com/BeanBoutique">Bean Boutique</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/BeanBoutique"><img src="Com-logos/Facebook.png" alt="Facebook-logo"></a></p>
+            <p>Instagram: <a href="https://www.instagram.com/BeanBoutique"><img src="Com-logos/Instagram.jpg" alt="Instagram-logo"></a></p>
+            <p>Twitter: <a href="https://x.com/BeanBoutique"><img src="Com-logos/X.png" alt="X-logo"></a></p>
         </div>
  
     </footer>
 
-    <script src="home.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>

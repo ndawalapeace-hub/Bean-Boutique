@@ -105,3 +105,40 @@ document.querySelectorAll(".cart-btn").forEach(button => {
 });
 updateCartCount();
 renderCart();
+
+
+const modal = document.getElementById("product-modal");
+ 
+if (modal) {
+    const modalImg = document.getElementById("modal-img");
+    const modalName = document.getElementById("modal-name");
+    const modalNotes = document.getElementById("modal-notes");
+    const modalBrewing = document.getElementById("modal-brewing");
+    const modalPrice = document.getElementById("modal-price");
+    const modalAdd = document.getElementById("modal-add");
+    const modalClose = document.getElementById("modal-close");
+ 
+    document.querySelectorAll(".block, .card").forEach(card => {
+        card.addEventListener("click", () => {
+            modalImg.src = card.querySelector("img")?.src || "";
+            modalName.textContent = card.dataset.name;
+            modalNotes.textContent = card.dataset.notes || "";
+            modalBrewing.textContent = card.dataset.brewing || "";
+            modalPrice.textContent = `K${card.dataset.price}`;
+            modalAdd.dataset.name = card.dataset.name;
+            modalAdd.dataset.price = card.dataset.price;
+            modal.classList.remove("hidden");
+        });
+    });
+ 
+    modalAdd.addEventListener("click", (e) => {
+        e.stopPropagation();
+        addToCart(modalAdd.dataset.name, Number(modalAdd.dataset.price));
+    });
+ 
+    modalClose.addEventListener("click", () => modal.classList.add("hidden"));
+ 
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) modal.classList.add("hidden");
+    });
+}

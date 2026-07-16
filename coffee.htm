@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bean Boutique</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="logo"></div>
 
      <nav>  
-        <div class="logo">Bean Boutique</div>
+        <div class="logo"><a href="index.htm">Bean Boutique</a></div>
         <ul>
-            <li><a href="main.htm">Home</a></li>
+            <li><a href="index.htm">Home</a></li>
             <li><a href="coffee.htm">Coffee</a></li>
             <li><a href="equipment.htm">Equipment</a></li>
             <li><a href="events.htm">Workshop & Events</a></li>
-            <li><a href="cart.htm">Cart <span id="cart-count">(0)</span></a></li>
+            <li><a href="subscription.htm">Subscriptions</a></li>
+            <li><a href="cart.htm">Cart:<span id="cart-count">(0)</span></a></li>
         </ul>
 
     </nav>
@@ -33,71 +34,78 @@
         </section>  
 
         <div class="images">
-            <div class="block" data-name="Colombian Supremo:" data-price="5000">
-                <img src="https://live.staticflickr.com/65535/48798210933_7c9ec1939a_b.jpg" alt="Colombian Supremo">
+            <div class="block" data-name="Colombian Supremo" data-price="5000" data-notes="Nutty and chocolatey" data-brewing="Pour Over, AeroPress">
+                <img src="coffee images/coffee 1.jpg" alt="Colombian Supremo">
                 <h2>Colombian Supremo</h2>
-                <p><strong>Tasting Notes:</strong>Nutty and chocolatey</p>
-                <p><strong>Brewing:</strong>Pour Over, AeroPress</p>
-                <p><strong>Price:</strong> K5000 per lb</p>
-                <button class="cart-btn">Add to Cart</button>
+                <p class="card-price">K5000 per lb</p>
             </div>
-            <div class="block" data-name="Ethiopia Yirgacheffe:" data-price="6000">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Irgachefe_coffee%E3%80%81Ethiopia.jpg/960px-Irgachefe_coffee%E3%80%81Ethiopia.jpg" alt="Ethiopia Yirgacheffe">
+            <div class="block" data-name="Ethiopia Yirgacheffe" data-price="6000" data-notes="Bright and floral, with a complex flavor." data-brewing="Pour Over, V60">
+                <img src="coffee images/coffee 2.jpg" alt="Ethiopia Yirgacheffe">
                 <h2>Ethiopia Yirgacheffe</h2>
-                <p><strong>Tasting Notes:</strong> Bright and floral, with a complex flavor.</p>
-                <p><strong>Brewing:</strong> Pour Over, V60</p>
-                <p><strong>Price:</strong> K6000 per lb</p>
-                <button class="cart-btn">Add to Cart</button>
+                <p class="card-price">K6000 per lb</p>
             </div>
-            <div class="block" data-name="Brazil Santos:" data-price="4000">
-                <img src="https://live.staticflickr.com/3148/2957482574_9fefaa1950_b.jpg" alt="Brazil Santos">
+            <div class="block" data-name="Brazil Santos" data-price="4000" data-notes="A smooth and balanced coffee with a mild chocolate flavour." data-brewing="Drip, French Press">
+                <img src="coffee images/coffee 3.jpg" alt="Brazil Santos">
                 <h2>Brazil Santos</h2>
-                <p><strong>Tasting Notes:</strong> A smooth and balanced coffee with a mild chocolate flavour.</p>
-                <p><strong>Brewing:</strong> Drip, French Press</p>
-                <p><strong>Price:</strong> K4000 per lb</p>
-                <button class="cart-btn">Add to Cart</button>
+                <p class="card-price">K4000 per lb</p>
             </div>
-            <div class="block" data-name="Guatemala Antigua:" data-price="5500">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Try-Me_Coffee_New_Orleans_-_1_pound_of_Guatemala_Antigua_freshly_roasted.jpg/1280px-Try-Me_Coffee_New_Orleans_-_1_pound_of_Guatemala_Antigua_freshly_roasted.jpg?_=20250830170238" alt="Guatemala Antigua">
+            <div class="block" data-name="Guatemala Antigua" data-price="5500" data-notes="A well-balanced coffee with a rich, full-bodied flavor and a hint of fruitiness." data-brewing="Drip, French Press">
+                <img src="coffee images/coffee 4.jpg" alt="Guatemala Antigua">
                 <h2>Guatemala Antigua</h2>
-                <p><strong>Tasting Notes:</strong> A well-balanced coffee with a rich, full-bodied flavor and a hint of fruitiness.</p>
-                <p><strong>Brewing:</strong> Drip, French Press</p>
-                <p><strong>Price:</strong> K5500 per lb</p>
-                <button class="cart-btn">Add to Cart</button>
+                <p class="card-price">K5500 per lb</p>
             </div>
-            <div class="block" data-name="Kenya AA:" data-price="7000">
-                <img src="https://live.staticflickr.com/5588/15047827509_455480f6e6_b.jpg" alt="Kenya AA">
+            <div class="block" data-name="Kenya AA" data-price="7000" data-notes="A bright and acidic coffee with a complex flavor profile." data-brewing="Pour Over, Aeropress">
+                <img src="coffee images/coffee 5.jpg" alt="Kenya AA">
                 <h2>Kenya AA</h2>
-                <p><strong>Tasting Notes:</strong> A bright and acidic coffee with a complex flavor profile.</p>
-                <p><strong>Brewing:</strong> Pour Over, Aeropress </p>
-                <p><strong>Price:</strong> K7000 per lb</p>
-                <button class="cart-btn">Add to Cart</button>
+                <p class="card-price">K7000 per lb</p>
             </div>
-            <div class="block" data-name="Sumatra Mandheling:" data-price="6500">
-                <img src="https://live.staticflickr.com/3133/2708088653_d5575dfa97_b.jpg" alt="Sumatra Mandheling">
+            <div class="block" data-name="Sumatra Mandheling" data-price="6500" data-notes="A full-bodied coffee with a distinct earthy and spicy flavor." data-brewing="French Press, Drip">
+                <img src="coffee images/coffee 6.jpg" alt="Sumatra Mandheling">
                 <h2>Sumatra Mandheling</h2>
-                <p><strong>Tasting Notes:</strong> A full-bodied coffee with a distinct earthy and spicy flavor.</p>
-                <p><strong>Brewing:</strong> French Press, Drip</p>
-                <p><strong>Price:</strong> K6500 per lb</p>
-                <button class="cart-btn">Add to Cart</button>
+                <p class="card-price">K6500 per lb</p>
             </div>
-            <div class="block" data-name="Jamaica Blue Mountain:" data-price="12000">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Jamaica_Blue_Mountain_Coffee_in_a_packet.jpg?_=20200810202612" alt="Jamaica Blue Mountain">
-                <h2>Jamaica Blue Mountain</h2>
-                <p><strong>Tasting Notes:</strong> A mild and smooth coffee with a rich, full-bodied flavor and a hint of fruitiness.</p>
-                <p><strong>Brewing:</strong> Drip, Espresso</p>
-                <p><strong>Price:</strong> K12000 per lb</p>
-                <button class="cart-btn">Add to Cart</button>
+            <div class="block" data-name="Jamaica Blue Mnt" data-price="12000" data-notes="A mild and smooth coffee with a rich, full-bodied flavor and a hint of fruitiness." data-brewing="Drip, Espresso">
+                <img src="coffee images/coffee 7.jpg" alt="Jamaica Blue Mnt">
+                <h2>Jamaica Blue Mtn</h2>
+                <p class="card-price">K12000 per lb</p>
             </div>
-            <div class="block" data-name="Mexico Chiapas:" data-price="5000">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bolsa_de_caf%C3%A9_org%C3%A1nico_zapatista.jpg/960px-Bolsa_de_caf%C3%A9_org%C3%A1nico_zapatista.jpg" alt="Mexico Chiapas">
+            <div class="block" data-name="Mexico Chiapas" data-price="5000" data-notes="Nutty, with a hint of chocolate and mild spiciness." data-brewing="Espresso, French Press">
+                <img src="coffee images/coffee 8.jpg" alt="Mexico Chiapas">
                 <h2>Mexico Chiapas</h2>
-                <p><strong>Tasting Notes:</strong> Nutty, with a hint of chocolate and mild spiciness.</p>
-                <p><strong>Brewing:</strong> Espresso, French Press</p>
-                <p><strong>Price:</strong> K5000 per lb</p>
-                <button class="cart-btn">Add to Cart</button>
+                <p class="card-price">K5000 per lb</p>
             </div>
-            
+            <div class="block" data-name="Costa Rica Tarrazu" data-price="6000" data-notes="Bright and clean, with citrus acidity and honey sweetness." data-brewing="Pour Over, V60">
+                <img src="coffee images/coffee 9.jpg" alt="Costa Rica Tarrazu">
+                <h2>Costa Rica Tarrazu</h2>
+                <p class="card-price">K6000 per lb</p>
+            </div>
+            <div class="block" data-name="Panama Geisha" data-price="6000" data-notes="Bright and floral, with a complex flavor." data-brewing="Pour Over, Siphon">
+                <img src="coffee images/coffee 10.jpg" alt="Panama Geisha">
+                <h2>Panama Geisha</h2>
+                <p class="card-price">K6000 per lb</p>
+            </div>
+            <div class="block" data-name="Vietnam Robusta" data-price="4000" data-notes="Earthy with strong bitterness." data-brewing="Espresso, Phin Filter">
+                <img src="coffee images/coffee 11.jpg" alt="Vietnam Robusta">
+                <h2>Vietnam Robusta</h2>
+                <p class="card-price">K4000 per lb</p>
+            </div>
+            <div class="block" data-name="Rwanda Bourbon" data-price="10000" data-notes="A well-balanced coffee with a rich, full-bodied flavor and a hint of fruitiness." data-brewing="Pour Over, AeroPress">
+                <img src="coffee images/coffee 12.jpg" alt="Rwanda Bourbon">
+                <h2>Rwanda Bourbon</h2>
+                <p class="card-price">K10000 per lb</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close">x</button>
+            <img id="modal-img" src="" alt="">
+            <h2 id="modal-name"></h2>
+            <p><strong>Tasting Notes:</strong> <span id="modal-notes"></span></p>
+            <p><strong>Brewing:</strong> <span id="modal-brewing"></span></p>
+            <p><strong>Price:</strong> <span id="modal-price"></span></p>
+            <button id="modal-add" class="cart-btn">Add to Cart</button>
         </div>
     </div>
 
@@ -115,13 +123,13 @@
 
         <div class="column-2">
             <h3>Follow Us</h3>
-            <p>Facebook: <a href="https://www.facebook.com/BeanBoutique">Bean Boutique</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/BeanBoutique">Bean Boutique</a></p>
-            <p>Twitter: <a href="https://x.com/BeanBoutique">Bean Boutique</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/BeanBoutique"><img src="Com-logos/Facebook.png" alt="Facebook-logo"></a></p>
+            <p>Instagram: <a href="https://www.instagram.com/BeanBoutique"><img src="Com-logos/Instagram.jpg" alt="Instagram-logo"></a></p>
+            <p>Twitter: <a href="https://x.com/BeanBoutique"><img src="Com-logos/X.png" alt="X-logo"></a></p>
         </div>
  
     </footer>
 
-    <script src="home.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
