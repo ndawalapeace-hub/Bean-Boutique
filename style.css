@@ -264,6 +264,7 @@ p {
     transition: 3s;
 }
 
+
 .equipments img {
   width: 14em;
   height: 14em;
@@ -396,7 +397,7 @@ footer p {
     width: 30em;
     padding: 2em;
     background-color: #efd5b6;
-    border-radius: 10px;
+    border-radius: 1em;
     margin-top: 3em;
 }
 
@@ -455,32 +456,211 @@ input{
     background-color: #efd5b6;
     border-radius: 10px;
     margin-top: 3em;
-}
-
-.cart-row button{
-    background-color: #572904;
-    color: white;
-    border: none;
-    padding: 0.4em;
-    margin-bottom: 1em;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-    border-radius: 0.5em;
-    transition: 0.3s;
-}
-
-.cart-row button:hover{
-    background-color: #E76F51;
-}
-
-#cart-total{
-    color: rgb(27, 17, 1);
+    box-shadow: 0 0.3em 0.8em rgba(44, 31, 31, 0.15);
 }
 
 .cart-container h1{
     text-decoration:wavy underline;
     font-size:x-large;
     padding-bottom: 1em;
+    color: #2C1F1F;
+}
+
+.cart-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    background-color: #f9f5f0;
+    padding: 0.8em 1em;
+    border-radius: 0.6em;
+    margin-bottom: 1em;
+    font-family: Arial, sans-serif;
+    color: #2C1F1F;
+    flex-wrap: wrap;
+}
+
+.cart-row span{
+    font-family: Arial, sans-serif;
+}
+
+.qty-controls{
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.qty-controls button{
+    background-color: #572904;
+    color: white;
+    border: none;
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.qty-controls button:hover{
+    background-color: #E76F51;
+}
+
+.cart-row button:not(.qty-controls button){
+    background-color: #722F37;
+    color: white;
+    border: none;
+    padding: 0.4em 0.8em;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    border-radius: 0.5em;
+    transition: 0.3s;
+}
+
+.cart-row button:not(.qty-controls button):hover{
+    background-color: #a83e49;
+}
+
+#cart-total{
+    color: #2C1F1F;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 1em;
+    padding-top: 0.8em;
+    border-top: 0.15em dashed #572904;
+}
+
+#cart-items p{
+    text-align: center;
+    font-style: italic;
+    color: #4e4704;
+    padding: 1em 0;
+}
+
+.promo-row{
+    display: flex;
+    gap: 0.5em;
+    margin-top: 1.5em;
+}
+
+.promo-row input{
+    flex: 1;
+    padding: 0.6em;
+    border: 0.1em solid #957373;
+    border-radius: 0.5em;
+    font-family: Arial, sans-serif;
+}
+
+.promo-row button{
+    background-color: #572904;
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    border-radius: 0.5em;
+    transition: 0.3s;
+}
+
+.promo-row button:hover{
+    background-color: #E76F51;
+}
+
+#promo-message{
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    min-height: 1.2em;
+}
+
+#checkout-btn{
+    display: block;
+    width: 100%;
+    background-color: #572904;
+    color: white;
+    border: none;
+    padding: 1em;
+    margin-top: 1.5em;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    border-radius: 0.5em;
+    transition: 0.3s;
+}
+
+#checkout-btn:hover{
+    background-color: #E76F51;
+}
+
+.special-offers{
+    padding: 1em; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top:2em;
+}
+
+.offer{
+    padding: 1em; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top:2em;
+} 
+/* Offers */
+
+
+.subscription-section{
+    padding: 1em; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top:2em;
+}
+
+.subscription{
+    display:flex;
+    grid-template-columns: repeat(4, 7em);
+    gap: 7em;
+    align-items: center;
+    justify-content: center;
+    padding:5em;
+    background-color: #efd5b6;
+    margin-top: 3em;
+    padding-bottom: 15em;
+    
+}
+
+.sub{
+    width: 100%;
+    height: 18em;
+    display: flex;
+    flex-direction:column;
+    gap: 1em;
+}
+
+/* Toast popup */
+
+#toast {
+    position: fixed;
+    bottom: 2em;
+    left: 50%;
+    transform: translateX(-50%) translateY(1em);
+    background-color: #2C1F1F;
+    color: #F4A261;
+    padding: 0.8em 1.5em;
+    border-radius: 0.5em;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+}
+
+#toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 /* interactivity */
